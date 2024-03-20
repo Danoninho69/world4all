@@ -44,7 +44,10 @@ import br.com.fiap.Word4All.ui.theme.Slate_Blue
 fun BusinessCreate (){
     var razaosocial by remember { mutableStateOf ("")}
     var cnpj by remember { mutableStateOf ("")}
-    var createMe by remember { mutableStateOf ("")}
+    var nomeLocal by remember { mutableStateOf ("")}
+    var nomeUf by remember { mutableStateOf ("")}
+    var endereco by remember { mutableStateOf ("")}
+    var cidade by remember { mutableStateOf ("")}
     var cep by remember { mutableStateOf ("")}
 
 
@@ -66,7 +69,7 @@ fun BusinessCreate (){
         horizontalAlignment = Alignment.CenterHorizontally,
     ){
         Text(
-            modifier = Modifier.padding(0.dp, 100.dp),
+            modifier = Modifier.padding(0.dp, 50.dp),
             text= "Registro Da Empresa",
             fontSize = 30.sp,
             fontFamily = FontFamily.Monospace,
@@ -101,10 +104,13 @@ fun BusinessCreate (){
                         keyboardType = KeyboardType.Text
                     ),
                     modifier = Modifier
+                        .clip(RoundedCornerShape(8.dp))
+                        .border(0.dp, Color.White, RoundedCornerShape(10.dp))
                         .fillMaxWidth()
-                        .padding(0.dp, 10.dp)
+                        .padding(0.dp, 0.dp)
                 )
 
+                Spacer(modifier = Modifier.padding(vertical = 5.dp, horizontal = 0.dp))
 
                 TextFieldCustom(
                     value = cnpj,
@@ -116,10 +122,13 @@ fun BusinessCreate (){
                         keyboardType = KeyboardType.Number
                     ),
                     modifier = Modifier
+                        .clip(RoundedCornerShape(8.dp))
+                        .border(0.dp, Color.White, RoundedCornerShape(10.dp))
                         .fillMaxWidth()
-                        .padding(0.dp, 10.dp),
-                    icon = R.drawable.ic_password
+                        .padding(0.dp, 0.dp)
                 )
+
+                Spacer(modifier = Modifier.padding(vertical = 15.dp, horizontal = 0.dp))
 
                 TextFieldCustom(
                     value = cep,
@@ -131,24 +140,83 @@ fun BusinessCreate (){
                         keyboardType = KeyboardType.Number
                     ),
                     modifier = Modifier
+                        .clip(RoundedCornerShape(8.dp))
+                        .border(0.dp, Color.White, RoundedCornerShape(10.dp))
                         .fillMaxWidth()
-                        .padding(0.dp, 10.dp),
-                    icon = R.drawable.ic_password
+                        .padding(0.dp, 0.dp)
                 )
 
+                Spacer(modifier = Modifier.padding(vertical = 5.dp, horizontal = 10.dp))
+
                 TextFieldCustom(
-                    value = cnpj,
+                    value = endereco,
                     onValueChange = {
-                        cnpj = it
+                        endereco = it
                     },
-                    hint = stringResource(id = R.string.hint_cnpj),
+                    hint = stringResource(id = R.string.hint_endereco),
                     keyboardOptions = KeyboardOptions(
-                        keyboardType = KeyboardType.Number
+                        keyboardType = KeyboardType.Text
                     ),
                     modifier = Modifier
+                        .clip(RoundedCornerShape(8.dp))
+                        .border(0.dp, Color.White, RoundedCornerShape(10.dp))
                         .fillMaxWidth()
-                        .padding(0.dp, 10.dp),
-                    icon = R.drawable.ic_password
+                        .padding(0.dp, 0.dp)
+                )
+
+                Spacer(modifier = Modifier.padding(vertical = 5.dp, horizontal = 10.dp))
+
+                TextFieldCustom(
+                    value = cidade,
+                    onValueChange = {
+                        cidade = it
+
+                    },
+                    hint = stringResource(id = R.string.hint_cidade),
+                    keyboardOptions = KeyboardOptions(
+                        keyboardType = KeyboardType.Text
+                    ),
+                    modifier = Modifier
+                        .clip(RoundedCornerShape(8.dp))
+                        .border(0.dp, Color.White, RoundedCornerShape(10.dp))
+                        .fillMaxWidth()
+                        .padding(0.dp, 0.dp)
+                )
+
+                Spacer(modifier = Modifier.padding(vertical = 5.dp, horizontal = 10.dp))
+
+                TextFieldCustom(
+                    value = nomeUf,
+                    onValueChange = {
+                        nomeUf = it
+                    },
+                    hint = stringResource(id = R.string.hint_uf),
+                    keyboardOptions = KeyboardOptions(
+                        keyboardType = KeyboardType.Text
+                    ),
+                    modifier = Modifier
+                        .clip(RoundedCornerShape(8.dp))
+                        .border(0.dp, Color.White, RoundedCornerShape(10.dp))
+                        .fillMaxWidth()
+                        .padding(0.dp, 0.dp)
+                )
+
+                Spacer(modifier = Modifier.padding(vertical = 5.dp, horizontal = 0.dp))
+
+                TextFieldCustom(
+                    value = nomeLocal,
+                    onValueChange = {
+                        nomeLocal = it
+                    },
+                    hint = stringResource(id = R.string.hint_nomeLocal),
+                    keyboardOptions = KeyboardOptions(
+                        keyboardType = KeyboardType.Text
+                    ),
+                    modifier = Modifier
+                        .clip(RoundedCornerShape(8.dp))
+                        .border(0.dp, Color.White, RoundedCornerShape(10.dp))
+                        .fillMaxWidth()
+                        .padding(0.dp, 0.dp)
                 )
 
                 }
@@ -157,19 +225,22 @@ fun BusinessCreate (){
                     onClick = {
                     },
                     modifier = Modifier
-                        .border(BorderStroke(2.dp,color= Color.White))
-                        .width(100.dp)
+                        .width(400.dp)
                         .height(90.dp)
-                        .padding(40.dp, 20.dp),
+                        .padding(20.dp, 20.dp)
+                        .clip(RoundedCornerShape(8.dp))
+                        .border(0.dp, Color.White, RoundedCornerShape(10.dp)),
                     colors = ButtonDefaults.buttonColors(
                         containerColor = Blue_800,
                         contentColor = Color.White
+
                     ),
-                    shape = RoundedCornerShape(8.dp)
+
+                    shape = RoundedCornerShape(8.dp),
                 ) {
                     Text(
                         text = stringResource(id = R.string.txt_Create),
-                        fontSize = 22.sp
+                        fontSize = 26.sp
                     )
                 }
 

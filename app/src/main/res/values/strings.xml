@@ -3,12 +3,20 @@
     <string name="hint_usarname">Username</string>
     <string name="hint_password">Password</string>
     <string name="hint_razao_social">Razão Social</string>
+    <string name="hint_nomeLocal">Nome do Estabelecimento</string>
+    <string name="hint_uf">UF</string>
+    <string name="hint_cidade">Cidade</string>
+    <string name="hint_endereco">Endereço</string>
     <string name="hint_cep">Cep</string>
     <string name="hint_cnpj">Cnpj</string>
     <string name="txt_remember_me">Remember me</string>
     <string name="txt_forgot_password">Forgot password?</string>
     <string name="txt_button_login">Login</string>
     <string name="txt_Create">Create</string>
+    <string name="txt_uf">UF</string>
+    <string name="txt_cidade">Cidade</string>
+    <string name="txt_endereco">Endereço</string>
     <string name="txt_cep">Cep</string>
     <string name="txt_cnpj">Cnpj</string>
+    <string name="txt_nomeLocal">Nome do Estabelecimento</string>
 </resources>

@@ -4,9 +4,11 @@
     <string name="hint_password">Password</string>
     <string name="hint_razao_social">Razão Social</string>
     <string name="hint_cep">Cep</string>
+    <string name="hint_cnpj">Cnpj</string>
     <string name="txt_remember_me">Remember me</string>
     <string name="txt_forgot_password">Forgot password?</string>
     <string name="txt_button_login">Login</string>
     <string name="txt_Create">Create</string>
     <string name="txt_cep">Cep</string>
+    <string name="txt_cnpj">Cnpj</string>
 </resources>

@@ -6,7 +6,20 @@
         <State />
       </entry>
       <entry key="BusinessCreatePreview">
-        <State />
+        <State>
+          <runningDeviceTargetSelectedWithDropDown>
+            <Target>
+              <type value="RUNNING_DEVICE_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="SERIAL_NUMBER" />
+                  <value value="6c12688e0123" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </runningDeviceTargetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-03-19T23:42:35.886427400Z" />
+        </State>
       </entry>
       <entry key="FormLoginPreview">
         <State />
